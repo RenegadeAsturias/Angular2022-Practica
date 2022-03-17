@@ -1,0 +1,23 @@
+
+1º Desde la terminal Creación del Proyecto de Ángular
+
+renegade@MIPC:~/proyectos$ ng new Angular2022-Practica
+
+
+2º Inicializo el proyecto en git
+git init
+git add .
+git commit -m "Proyecto Practica"
+
+
+3º Creo el Proyecto en GitHub
+Y añado en git un remoto para subir el proyecto
+
+renegade@MiPC:~/proyectos/Angular2022/modulos$ git remote add modulos https://github.com/RenegadeAsturias/Angular2022-Modulos.git
+
+
+10º Subo los cambios a GitHub
+
+renegade@MiPC:~/proyectos/Angular2022/modulos$ git push modulos master
+
+
