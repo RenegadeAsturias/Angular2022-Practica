@@ -1,0 +1,30 @@
+
+1º Crear un Componte con CLI (Command Line Interface)
+renegade@MiPC:~/proyectos/Angular2022-Practica$ ng generate component empleado
+renegade@MiPC:~/proyectos/Angular2022-Practica$ ng g c empleado (Abreviado)
+
+Se crean los ficheros que generamos manualmente en el ejemplo anterior automáticamente
+y se añade a la lista de componentes en: app.module.ts
+
+import { EmpleadoComponent } from './empleado/empleado.component';
+
+@NgModule({
+  declarations: [
+    AppComponent, EmpleadosComponent, EmpleadoComponent
+
+
+2º Añadimos el Componente a nuestra aplicacion en el fichero: src\app\empleados.component.html
+es decir, dentro del objeto padre que habíamos creado previamente.
+
+<h1 style="text-align: center;">Empleados de la empresa</h1>
+
+<app-empleado></app-empleado> ..................... Puedo añadir/reutilizar el módulo tantas veces como quiera
+<app-empleado></app-empleado>
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+
+1º Creamos un componente: 'empleadosComponent'
+
+Añadimos la carpeta en: src\app\empleados
+
+Y creamos los ficheros:
+
+empleados.component.ts ................ Creamos la Clase + Decorador para el componente: 'empleadosComponent'
+
+
+import { Component } from "@angular/core";
+
+@Component ({
+    selector: 'app-empleados-component',
+    templateUrl: './empleados.component.html',
+    styleUrls: ['./empleados.component.css']
+})
+
+export class EmpleadosComponent {
+
+}
+
++ empleados.component.html
++ empleados.component.css
+
+
+2º Registramos el componente en el fichero: src\app\app.module.ts
+
+import { EmpleadosComponent } from './empleados/empleados.component';
+
+@NgModule({
+  declarations: [
+    AppComponent, EmpleadosComponent
+
+
+3º Añadimos el Componente a nuestra aplicacion en el fichero: src\app\app.component.html
+
+<h1>{{ title }}</h1> aplicación Angular con módulos
+<app-empleados-component></app-empleados-component>
+
